@@ -1,0 +1,21 @@
+{
+  "name": "mysite",
+  "version": "0.0.0",
+  "authors": [
+    "kdes70 <kdes70@mail.ru>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_companents",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "~3.0.2",
+    "jquery": "~2.1.3"
+  }
+}
