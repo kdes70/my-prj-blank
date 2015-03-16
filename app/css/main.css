@@ -1,0 +1,3 @@
+/* = Сбрасываем выравнивание после плавающих элементов */
+.clear { clear: both; height: 1px; margin-top: -1px }
+.right{ float: right;}

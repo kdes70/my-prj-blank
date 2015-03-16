@@ -72,10 +72,11 @@ gulp.task('bower', function () {
 });
 
 
-
+// deploy Клонируем проект с GitHub
 var options = {
     remoteUrl: "https://github.com/kdes70/my-prj-blank",
     branch: "master"};
+
 gulp.task('deploy', function () {
     gulp.src("dist/**/*.*")
         .pipe(deploy(options));

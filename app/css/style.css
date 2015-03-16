@@ -1,14 +1,30 @@
-@import "http://webfonts.ru/import/beermoney.css";
-
+@import "http://webfonts.ru/import/basicomical.css";
 /* = Сброс отступов для всех элементов */
-* { margin: 0; padding: 0 }
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
 /* = Убираем маркировку списков */
 ul, ol { list-style: none }
 
-a{text-decoration: none;}
+/* = Работаем с таблицами: убираем удвоение рамок ячеек и расстояние между ячейками */
+table { border-collapse: collapse; border-spacing: 0 }
+
+/* = Убираем рамку для изображений */
+img { border: none; height: auto; max-width: 100%; }
+
+a{text-decoration: none; color: #2D2D2D;}
 
 body{
-    font-family: 'Beer money';
+    font-family: 'Basic Comical NC';
+    -webkit-font-smoothing:antialiased;
+    text-rendering: optimizeSpeed;
+    font-size: 1em;
+    color: #2D2D2D;
+
 }
 #wrepper{
     min-width: 960px;
@@ -18,34 +34,56 @@ body{
 }
 #header{
     width: 100%;
-    height: 300px;
+    height: 280px;
     position: relative;
     outline: 1px solid black;
 }
+#header h2{
+    position: relative;
+    top: 100px;
+    font-size: 2em;
+}
+
+.top_info{
+    padding: 20px;
+    font-size: 1.3em;
+}
+.top_info p{
+    margin-bottom: 10px;
+}
+#logo{
+    float: left;
+}
+
 /* ===== MENU ===== */
 #menu{
-    height: 60px;
+    height: 50px;
     outline: 1px solid black;
     position: relative;
-    bottom: -12px;
+    bottom: -24px;
 }
 #menu ul{
     width: 100%;
 }
 #menu li{
-    width: 19.9%;
+    width: 20%;
     float: left;
     border-right: 1px solid;
     text-align: center;
 
 }
+    #menu li:hover{
+        background: #D6D6D6;
+    }
 #menu li:last-child{
     border-right: 0px;
 }
 #menu li a{
-    line-height: 60px;
+    line-height: 50px;
 }
-
+    #menu li a:hover{
+        color: #FBAF40;
+    }
 
 /* ====== CONTAINER ====== */
 
